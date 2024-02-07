@@ -2,7 +2,7 @@ Affected Version:
 yasm 1.3.0 9defefae9fbcb6958cddbfa778c1ea8605da8b8b
 
 Vulnerability Description:
-This defect is a null pointer dereference issue, where a null pointer is passed into the strlen function. As glibc does not check whether the pointer passed to the strlen function is null, passing a null pointer to the strlen function can lead to a program crash.
+The defect occurs at line 177 in the file /yasm/modules/preprocs/nasm/nasmlib.c.This defect is a null pointer dereference issue, where a null pointer is passed into the strlen function. As glibc does not check whether the pointer passed to the strlen function is null, passing a null pointer to the strlen function can lead to a program crash.
 
 yasm download address:
 https://github.com/yasm/yasm.git
